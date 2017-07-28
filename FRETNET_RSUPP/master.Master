@@ -19,7 +19,7 @@
     <form id="formMenu" runat="server">
         <div >
 			<img class="imgLogoOncf" src="LogoOncf.png" " />
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
 				<asp:Menu ID="MenuAccueil" runat="server" Orientation="Horizontal" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
 					<Items>
 						<asp:MenuItem NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil"></asp:MenuItem>
@@ -35,7 +35,7 @@
 					</Items>
 
 				</asp:Menu>
-			</asp:ContentPlaceHolder>
+			<%--</asp:ContentPlaceHolder>--%>
         </div>
     </form>
 </body>

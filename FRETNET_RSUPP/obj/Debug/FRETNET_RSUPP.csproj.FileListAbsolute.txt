@@ -4,3 +4,9 @@ c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRET
 c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.csprojResolveAssemblyReference.cache
 c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.dll
 c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.pdb
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.dll.config
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.dll
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.pdb
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.dll
+C:\Users\user\Desktop\stage 2017\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.pdb
