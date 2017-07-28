@@ -18,25 +18,28 @@
     <form id="formMenu" runat="server">
         <div >
 			<img class="imgLogoOncf" src="LogoOncf.png" " />
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
             <br />
             <br />
-				<asp:Menu ID="MenuAccueil" runat="server" Orientation="Horizontal" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
+            <asp:Menu ID="MenuAccueil" runat="server" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
 					<Items>
-						<asp:MenuItem NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil"></asp:MenuItem>
-						<asp:MenuItem NavigateUrl="~/webFormGestionDesEnregistrements.aspx" Text="Gestion des enregistrements" Value="Gestion des enregistrements">
+						 <asp:MenuItem NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil ">
+
+						 </asp:MenuItem>
+						 <asp:MenuItem NavigateUrl="~/webFormGestionDesEnregistrements.aspx"  Text="Gestion des enregistrements" Value="Gestion des enregistrements">
 							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementInsertion.aspx" Text="Insertion des opérations " Value="Insertion des opérations "></asp:MenuItem>
 							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementModification.aspx" Text="Modification des opérations " Value="Modification des opérations "></asp:MenuItem>
 							<asp:MenuItem Text="Supression des opérations " Value="Supression des opérations " NavigateUrl="~/webFormGestionEnregistrementSuppression.aspx"></asp:MenuItem>
 						</asp:MenuItem>
-						<asp:MenuItem NavigateUrl="~/webFormConsultation.aspx" Text="Consultation " Value="Consultation ">
+						<asp:MenuItem NavigateUrl="~/webFormConsultation.aspx"  Text="Consultation " Value="Consultation ">
 							<asp:MenuItem NavigateUrl="~/webFormContrôle.aspx" Text="Contrôle" Value="Contrôle"></asp:MenuItem>
 							<asp:MenuItem NavigateUrl="~/webFormImpressionEtat.aspx" Text="Impression d'état " Value="Impression d'état "></asp:MenuItem>
 						</asp:MenuItem>
 					</Items>
 
 				</asp:Menu>
-			<%--</asp:ContentPlaceHolder>--%>
+			
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            
         </div>
     </form>
 </body>
