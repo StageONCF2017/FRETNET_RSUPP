@@ -5,10 +5,9 @@
 <html>
 <head runat="server">
     <title>Master</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-		hhhh
-    </asp:ContentPlaceHolder>
-	<style type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server"/>
+		
+    	<style type="text/css">
 		.imgLogoOncf {
 			height: 44px;
 			width: 114px;
@@ -20,16 +19,18 @@
         <div >
 			<img class="imgLogoOncf" src="LogoOncf.png" " />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+            <br />
+            <br />
 				<asp:Menu ID="MenuAccueil" runat="server" Orientation="Horizontal" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
 					<Items>
 						<asp:MenuItem NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil"></asp:MenuItem>
 						<asp:MenuItem NavigateUrl="~/webFormGestionDesEnregistrements.aspx" Text="Gestion des enregistrements" Value="Gestion des enregistrements">
 							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementInsertion.aspx" Text="Insertion des opérations " Value="Insertion des opérations "></asp:MenuItem>
 							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementModification.aspx" Text="Modification des opérations " Value="Modification des opérations "></asp:MenuItem>
-							<asp:MenuItem Text="Supression des opérations " Value="Supression des opérations "></asp:MenuItem>
+							<asp:MenuItem Text="Supression des opérations " Value="Supression des opérations " NavigateUrl="~/webFormGestionEnregistrementSuppression.aspx"></asp:MenuItem>
 						</asp:MenuItem>
 						<asp:MenuItem NavigateUrl="~/webFormConsultation.aspx" Text="Consultation " Value="Consultation ">
-							<asp:MenuItem NavigateUrl="~/webFormContrôle" Text="Contrôle" Value="Contrôle"></asp:MenuItem>
+							<asp:MenuItem NavigateUrl="~/webFormContrôle.aspx" Text="Contrôle" Value="Contrôle"></asp:MenuItem>
 							<asp:MenuItem NavigateUrl="~/webFormImpressionEtat.aspx" Text="Impression d'état " Value="Impression d'état "></asp:MenuItem>
 						</asp:MenuItem>
 					</Items>
