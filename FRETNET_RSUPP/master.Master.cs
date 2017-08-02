@@ -11,7 +11,7 @@ namespace FRETNET_RSUPP
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			
+		
 		}
 
 		protected void MenuAccueil_MenuItemClick(object sender, MenuEventArgs e)

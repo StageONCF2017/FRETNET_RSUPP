@@ -11,7 +11,7 @@ namespace FRETNET_RSUPP
 {
 
 
-	public partial class webFormContrôle
+	public partial class webFormConsultation
 	{
 	}
 }

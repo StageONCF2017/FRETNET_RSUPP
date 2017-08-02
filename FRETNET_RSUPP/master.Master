@@ -5,42 +5,119 @@
 <html>
 <head runat="server">
     <title>Master</title>
-    <asp:ContentPlaceHolder ID="head" runat="server"/>
-		
-    	<style type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server" >		
+    </asp:ContentPlaceHolder>
+	<style type="text/css">
+		.frmOuverture {
+    /* Pour le centrer dans la page */
+			margin-left:330px;
+			margin-top: 15px;
+			width: 650px;
+			height: 550px;
+    /* Pour voir les limites du formulaire */
+			padding: 1em;
+			border: 1px solid #CCC;
+			border-radius: 1em;
+			border-color:#ff6a00;
+			position:page.center;
+    /*font-weight: 30em; */
+
+}
+		#divMenu{
+			margin-left:10px;
+			margin-top:10px;
+		}
+		.titresDesPages {
+			text-align:left;
+			margin-left:10px;
+			color:#ff6a00;
+		}		
+	
 		.imgLogoOncf {
 			height: 44px;
 			width: 114px;
+			margin-right:214px;
 		}
+		
+		.auto-style1 {
+			font-family: "Yu Gothic UI";
+			position:fixed;
+			bottom:0;
+		}
+		.auto-style2 {
+			font-family: "Segoe UI Symbol";
+		}
+		#lblTitreApplication{
+			text-align:center ;
+			width:510px;
+			margin-top:0px;
+			margin-right:5px;
+			font-size:larger;
+			font:bold;
+			color:#ff6a00;
+			
+		}
+		#divImgLogoOncf{
+			width:100%;
+			border-right-width:170px;
+			font-weight: 700;
+		}
+		
 	</style>
+
 </head>
 <body>
-    <form id="formMenu" runat="server">
+	
+    <form id="formMenu" class="frmOuverture" runat="server">
         <div >
-			<img class="imgLogoOncf" src="LogoOncf.png" " />
-            <br />
-            <br />
-            <asp:Menu ID="MenuAccueil" runat="server" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
-					<Items>
-						 <asp:MenuItem NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil ">
-
-						 </asp:MenuItem>
-						 <asp:MenuItem NavigateUrl="~/webFormGestionDesEnregistrements.aspx"  Text="Gestion des enregistrements" Value="Gestion des enregistrements">
-							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementInsertion.aspx" Text="Insertion des opérations " Value="Insertion des opérations "></asp:MenuItem>
-							<asp:MenuItem NavigateUrl="~/webFormGestionEnregistrementModification.aspx" Text="Modification des opérations " Value="Modification des opérations "></asp:MenuItem>
-							<asp:MenuItem Text="Supression des opérations " Value="Supression des opérations " NavigateUrl="~/webFormGestionEnregistrementSuppression.aspx"></asp:MenuItem>
-						</asp:MenuItem>
-						<asp:MenuItem NavigateUrl="~/webFormConsultation.aspx"  Text="Consultation " Value="Consultation ">
-							<asp:MenuItem NavigateUrl="~/webFormContrôle.aspx" Text="Contrôle" Value="Contrôle"></asp:MenuItem>
-							<asp:MenuItem NavigateUrl="~/webFormImpressionEtat.aspx" Text="Impression d'état " Value="Impression d'état "></asp:MenuItem>
-						</asp:MenuItem>
-					</Items>
-
-				</asp:Menu>
 			
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-            
+			
+			<div id="divImgLogoOncf">
+				<img class="imgLogoOncf" src="LogoOncf.png" " /> 
+				<label id="lblTitreApplication"> FRETNET Recettes Supplémentaires </label>
+			</div>
+			<!--<div  id="divLblTitreApplication"> 
+				<asp:Label ID="lblTitreApplication" runat="server" Text="FRETNET Recettes Supplémentaires" ForeColor="#FF6600" Font-Size="Larger" Font-Bold="True"></asp:Label>
+			</div> -->
+			<div>
+				<h1 class="titresDesPages"> <%= Page.Title %> </h1>
+			</div>
+			
+			
+			<br/>
+			<br />
+			<div id="divMenu">
+				<asp:Menu ID="MenuAccueil" runat="server" ForeColor="#FF6600" OnMenuItemClick="MenuAccueil_MenuItemClick">
+					<Items>
+						<asp:MenuItem  NavigateUrl="~/webFormAccueil.aspx" Text="Accueil" Value="Accueil"></asp:MenuItem>
+						<asp:MenuItem  NavigateUrl="~/webFormSaisieMensuelleDesRecettes.aspx" Text="Saisie mensuelle des recettes supplémentaires" Value="Saisie mensuelles des recettes supplémentaires">
+						</asp:MenuItem>
+						<asp:MenuItem  NavigateUrl="~/webFormContrôle.aspx" Text="Contrôle des recettes supplémentaires " Value="Contrôle des recettes supplémentaires ">							
+						</asp:MenuItem>
+						</Items>
+				</asp:Menu>
+
+			</div>
+			
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+            </asp:ContentPlaceHolder>
+				
+			
         </div>
+		<br />
     </form>
+	<br />
+	<br />
+	<br />
+
+	
+	
+<footer>
+	<div id="footer" class="auto-style1">
+		<span class="auto-style2">&copy; 2017 ONCF - TOUS DROITS RÉSERVÉS</span>
+	</div>
+</footer>
 </body>
+
+
 </html>
