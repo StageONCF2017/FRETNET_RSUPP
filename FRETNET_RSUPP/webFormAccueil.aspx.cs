@@ -13,5 +13,10 @@ namespace FRETNET_RSUPP
 		{
 
 		}
+
+        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 	}
 }

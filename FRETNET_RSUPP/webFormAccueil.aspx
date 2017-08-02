@@ -16,14 +16,51 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-		<div id="divFrmOuverture">
-			<label id="lblMois">Mois</label>
-			<input type="number" min="01" max="12" step="1" value="01"/> <br />
-			<label id="lblAnnee">Année</label>
-			<input type="number" min="1900" max="2099" step="1" value="2017" /> <br />
-			<label id="lblGare">Gare</label>
-			<input type="text" /> <br />
-			<input type="submit" value="Ouvrir le mois"/>
-		</div>
+		
+			
+    <p>
+        <br />
+    </p>
+    <p>
+        Mois<asp:ListBox ID="ListBox1" runat="server" Height="73px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" Width="122px">
+            <asp:ListItem>02</asp:ListItem>
+            <asp:ListItem>01</asp:ListItem>
+            <asp:ListItem>04</asp:ListItem>
+            <asp:ListItem>03</asp:ListItem>
+            <asp:ListItem>06</asp:ListItem>
+            <asp:ListItem>05</asp:ListItem>
+            <asp:ListItem>08</asp:ListItem>
+            <asp:ListItem>07</asp:ListItem>
+            <asp:ListItem>10</asp:ListItem>
+            <asp:ListItem>09</asp:ListItem>
+            <asp:ListItem>12</asp:ListItem>
+            <asp:ListItem>11</asp:ListItem>
+        </asp:ListBox>
+    </p>
+    <p>
+        Année<asp:ListBox ID="ListBox2" runat="server" Height="22px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" Width="119px">
+            <asp:ListItem>01</asp:ListItem>
+            <asp:ListItem>02</asp:ListItem>
+            <asp:ListItem>03</asp:ListItem>
+            <asp:ListItem>04</asp:ListItem>
+            <asp:ListItem>05</asp:ListItem>
+            <asp:ListItem>06</asp:ListItem>
+            <asp:ListItem>07</asp:ListItem>
+            <asp:ListItem>08</asp:ListItem>
+            <asp:ListItem>09</asp:ListItem>
+            <asp:ListItem>10</asp:ListItem>
+            <asp:ListItem>11</asp:ListItem>
+            <asp:ListItem>12</asp:ListItem>
+        </asp:ListBox>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+		
 			
 </asp:Content>
