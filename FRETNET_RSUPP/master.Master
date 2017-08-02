@@ -41,6 +41,8 @@
 		
 		.auto-style1 {
 			font-family: "Yu Gothic UI";
+			position:fixed;
+			bottom:0;
 		}
 		.auto-style2 {
 			font-family: "Segoe UI Symbol";
