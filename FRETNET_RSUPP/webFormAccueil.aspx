@@ -18,7 +18,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 		<div id="divFrmOuverture">
 			<label id="lblMois">Mois</label>
-			<input type="month" /> <br />
+			<input type="number" min="01" max="12" step="1" value="01"/> <br />
 			<label id="lblAnnee">Année</label>
 			<input type="number" min="1900" max="2099" step="1" value="2017" /> <br />
 			<label id="lblGare">Gare</label>
