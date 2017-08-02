@@ -1,6 +1,0 @@
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.dll.config
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.dll
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\bin\FRETNET_RSUPP.pdb
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.csprojResolveAssemblyReference.cache
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.dll
-c:\users\hamza el rhazi\documents\visual studio 2017\Projects\FRETNET_RSUPP\FRETNET_RSUPP\obj\Debug\FRETNET_RSUPP.pdb
