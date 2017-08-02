@@ -31,15 +31,6 @@ namespace FRETNET_RSUPP {
         protected global::System.Web.UI.HtmlControls.HtmlForm formMenu;
         
         /// <summary>
-        /// Contrôle lblTitreApplication.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitreApplication;
-        
-        /// <summary>
         /// Contrôle MenuAccueil.
         /// </summary>
         /// <remarks>

@@ -11,7 +11,7 @@ namespace FRETNET_RSUPP
 {
 
 
-	public partial class accueil
+	public partial class webFormGestionEnregistrementSuppression
 	{
 	}
 }
