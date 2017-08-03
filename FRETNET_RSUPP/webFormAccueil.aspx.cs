@@ -14,6 +14,8 @@ namespace FRETNET_RSUPP
 		//Ces deux variables vont être utiliser par tout dans les autre pages de ce module
 		public static String  moisOuverture;
 		public static String  anneeOuverture;
+		//Session(moisOuverture)="";
+		//Session("anneeOuverture")="";
 
 		//declaration d'une methode pour limiter les valeurs proposés 
 		//par les ListBoxs du formulaire d'accueil
@@ -24,7 +26,7 @@ namespace FRETNET_RSUPP
 					String iString = i.ToString();
 					LstBxMois.Items.Add(new ListItem(iString, iString));
 				}
-			LstBxMois.SelectedValue = "8";
+			//LstBxMois.SelectedValue = "8";
 
 			//Pour l'année
 			for (int i = 2000; i <= 2099; i++)
@@ -32,21 +34,24 @@ namespace FRETNET_RSUPP
 				String iString = i.ToString();
 				LstBxAnnee.Items.Add(new ListItem(iString, iString));
 			}
-			LstBxAnnee.SelectedValue = "2017";
+			//LstBxAnnee.SelectedValue = "2017";
 		}
 
 
 
 
-	//Methode StockerMoisAnneeeOuverture pour stocker le mois et l'année séléctionnées 
+	//Methode StockerMoisAnneeOuverture pour stocker le mois et l'année séléctionnées 
 	//dans le formulaire d'ouverture dans les variables static moisOuverture et anneeOuverture
 		public void StockerMoisAnneeOuverture()
 		{
-			moisOuverture = LstBxMois.SelectedValue;
-			anneeOuverture = LstBxAnnee.SelectedValue;
-			LblEtatOuverture.ForeColor = System.Drawing.Color.Green;
-			LblEtatOuverture.Text = " L'état d'ouverture : Le mois "+ moisOuverture+ " de l'année " + anneeOuverture + " est en état d'ouverture";
-	
+			moisOuverture  = LstBxMois.SelectedValue;
+			anneeOuverture = LstBxAnnee.SelectedValue;		
+			
+			if (moisOuverture != "" && anneeOuverture != "")
+			{
+				LblEtatOuverture.ForeColor = System.Drawing.Color.Green;
+				LblEtatOuverture.Text = " L'état d'ouverture : Le mois " + moisOuverture + " de l'année " + anneeOuverture + " est en état d'ouverture";
+			}
 		}
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -62,15 +67,20 @@ namespace FRETNET_RSUPP
 		//Le clique sur ce bouton active le stockage
 		protected void BtnMoisAnneeOuverture_Click(object sender, EventArgs e)
 		{
-			StockerMoisAnneeOuverture();
+			
+				StockerMoisAnneeOuverture();
+			
+
 		}
 
 		protected void BtnMoisAnneeFermeture_Click(object sender, EventArgs e)
 		{
-			//reinitialiser les valeurs stockés du mois et année d'ouverture 
-			moisOuverture = "";
-			anneeOuverture = "";
-			LblEtatOuverture.Text = " L'état d'ouverture : Aucun mois n'est en ouverture";
+			if (moisOuverture != "" && anneeOuverture != "") {
+				//reinitialiser les valeurs stockés du mois et année d'ouverture 
+				moisOuverture = "";
+				anneeOuverture = "";
+				LblEtatOuverture.Text = "L'état d'ouverture : En fermeture! Aucun mois n'est en ouverture";
+			}
 		}
 	}
 }
