@@ -253,6 +253,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\clsDB.cs" />
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

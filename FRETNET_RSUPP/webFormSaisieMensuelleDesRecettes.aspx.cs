@@ -11,7 +11,8 @@ namespace FRETNET_RSUPP
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			LblEtatOuvertureInsertion.ForeColor= System.Drawing.Color.Green;
+			LblEtatOuvertureInsertion.Text = "Etat d'ouverture : Le mois "+ accueil.moisOuverture+" de l'année " + accueil.anneeOuverture +" est en état d'ouverture";
 		}
 	}
 }
