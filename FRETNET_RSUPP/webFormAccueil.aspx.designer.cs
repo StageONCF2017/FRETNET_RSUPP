@@ -58,6 +58,15 @@ namespace FRETNET_RSUPP {
         protected global::System.Web.UI.WebControls.Button BtnMoisAnneeOuverture;
         
         /// <summary>
+        /// BtnMoisAnneeFermeture control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnMoisAnneeFermeture;
+        
+        /// <summary>
         /// LblEtatOuverture control.
         /// </summary>
         /// <remarks>
