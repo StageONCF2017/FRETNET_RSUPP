@@ -82,6 +82,7 @@ namespace FRETNET_RSUPP
 				moisOuverture = "";
 				anneeOuverture = "";
 				LblEtatOuverture.Text = "L'état d'ouverture : En fermeture! Aucun mois n'est en ouverture";
+				
 			}
 		}
 	}

@@ -22,15 +22,6 @@ namespace FRETNET_RSUPP {
         protected global::System.Web.UI.WebControls.Label LblEtatOuvertureInsertion;
         
         /// <summary>
-        /// LblCodeGare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCodeGare;
-        
-        /// <summary>
         /// LstBxCodeGare control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,31 @@ namespace FRETNET_RSUPP {
         protected global::System.Web.UI.WebControls.ListBox LstBxCodeGare;
         
         /// <summary>
-        /// LblTotalTape control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTotalTape;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        
+        /// <summary>
+        /// TxtBxAnnee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtBxAnnee;
+        
+        /// <summary>
+        /// TxtBxMois control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtBxMois;
         
         /// <summary>
         /// TxtBxTotalTape control.
@@ -58,12 +67,21 @@ namespace FRETNET_RSUPP {
         protected global::System.Web.UI.WebControls.TextBox TxtBxTotalTape;
         
         /// <summary>
-        /// SqlDataSrcFormulaireInsertionMensuelle control.
+        /// BtnSaisie control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSrcFormulaireInsertionMensuelle;
+        protected global::System.Web.UI.WebControls.Button BtnSaisie;
+        
+        /// <summary>
+        /// SqlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
     }
 }
