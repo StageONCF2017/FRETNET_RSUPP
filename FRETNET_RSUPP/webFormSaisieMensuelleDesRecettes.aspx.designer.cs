@@ -10,7 +10,7 @@
 namespace FRETNET_RSUPP {
     
     
-    public partial class webFormGestionDesEnregistrements {
+    public partial class webFormSaisieMensuelleDesRecettes {
         
         /// <summary>
         /// LblEtatOuvertureInsertion control.

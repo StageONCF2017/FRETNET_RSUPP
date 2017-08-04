@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Saisie mensuelle des recettes supplémentaires" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="webFormSaisieMensuelleDesRecettes.aspx.cs" Inherits="FRETNET_RSUPP.webFormGestionDesEnregistrements" %>
+﻿<%@ Page Title="Saisie mensuelle des recettes supplémentaires" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="webFormSaisieMensuelleDesRecettes.aspx.cs" Inherits="webFormSaisieMensuelleDesRecettes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 		<style type="text/css">
 		.titresDesPages {
