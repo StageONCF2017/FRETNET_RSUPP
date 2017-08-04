@@ -59,7 +59,7 @@ namespace FRETNET_RSUPP
 			BornerLesValeurdesListBoxMoisAnnee();
 
 			//Initialiser l'état d'ouverture en indiquant que aucun mois n'est en état d'ouverture
-			//LblEtatOuverture.ForeColor = System.Drawing.Color.Red;
+			LblEtatOuverture.ForeColor = System.Drawing.Color.Red;
 			//LblEtatOuverture.Text = " L'état d'ouverture : Aucun mois n'est en ouverture";
 
 			
@@ -72,7 +72,6 @@ namespace FRETNET_RSUPP
 			
 				StockerMoisAnneeOuverture();
 			
-
 		}
 
 		protected void BtnMoisAnneeFermeture_Click(object sender, EventArgs e)
@@ -82,6 +81,9 @@ namespace FRETNET_RSUPP
 				moisOuverture = "";
 				anneeOuverture = "";
 				LblEtatOuverture.Text = "L'état d'ouverture : En fermeture! Aucun mois n'est en ouverture";
+				
+
+
 			}
 		}
 	}
