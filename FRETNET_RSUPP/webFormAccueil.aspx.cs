@@ -59,7 +59,7 @@ namespace FRETNET_RSUPP
 			BornerLesValeurdesListBoxMoisAnnee();
 
 			//Initialiser l'état d'ouverture en indiquant que aucun mois n'est en état d'ouverture
-			//LblEtatOuverture.ForeColor = System.Drawing.Color.Red;
+			LblEtatOuverture.ForeColor = System.Drawing.Color.Red;
 			//LblEtatOuverture.Text = " L'état d'ouverture : Aucun mois n'est en ouverture";
 
 			
