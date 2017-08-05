@@ -31,6 +31,15 @@ namespace FRETNET_RSUPP
 			TxtBxAnnee.Text = accueil.anneeOuverture;
 			TxtBxMois.Text = accueil.moisOuverture;
 			TxtBxTotalTape.Text ="";
+			try
+			{
+				SqlDataSource2.Insert();
+				BtnSaisie.Attributes.Add("onClick", "javascript:alert('Insertion effectuée');");
+			}
+			catch (Exception ex)
+			{
+				BtnSaisie.Attributes.Add("onClick", "javascript:alert('Oops! Insertion échouée');");
+			}
 		}
 	}
 }

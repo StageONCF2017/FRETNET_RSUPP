@@ -51,6 +51,7 @@
 			</td>
 			
 		</tr>
+		
 	</table>
 
 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringSaisie %>" InsertCommand="Insert into [FRETNET_ControleRecette_SUPPLEMENTIARE]
